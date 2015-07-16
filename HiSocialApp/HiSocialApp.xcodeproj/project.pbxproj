@@ -15,6 +15,7 @@
 		A959C4B71B57F44C00FA1481 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A959C4B51B57F44C00FA1481 /* LaunchScreen.xib */; };
 		A959C4C31B57F44C00FA1481 /* HiSocialAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A959C4C21B57F44C00FA1481 /* HiSocialAppTests.m */; };
 		A959C4CE1B57F46500FA1481 /* Storyboard1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A959C4CC1B57F46500FA1481 /* Storyboard1.storyboard */; };
+		A959C4D11B57F4AB00FA1481 /* Storyboard2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A959C4CF1B57F4AB00FA1481 /* Storyboard2.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		A959C4C11B57F44C00FA1481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A959C4C21B57F44C00FA1481 /* HiSocialAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HiSocialAppTests.m; sourceTree = "<group>"; };
 		A959C4CD1B57F46500FA1481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HiSocialApp/Base.lproj/Storyboard1.storyboard; sourceTree = "<group>"; };
+		A959C4D01B57F4AB00FA1481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HiSocialApp/Base.lproj/Storyboard2.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		A959C49A1B57F44C00FA1481 = {
 			isa = PBXGroup;
 			children = (
+				A959C4CF1B57F4AB00FA1481 /* Storyboard2.storyboard */,
 				A959C4CC1B57F46500FA1481 /* Storyboard1.storyboard */,
 				A959C4A51B57F44C00FA1481 /* HiSocialApp */,
 				A959C4BF1B57F44C00FA1481 /* HiSocialAppTests */,
@@ -206,6 +209,7 @@
 				A959C4B71B57F44C00FA1481 /* LaunchScreen.xib in Resources */,
 				A959C4B41B57F44C00FA1481 /* Images.xcassets in Resources */,
 				A959C4CE1B57F46500FA1481 /* Storyboard1.storyboard in Resources */,
+				A959C4D11B57F4AB00FA1481 /* Storyboard2.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +274,14 @@
 				A959C4CD1B57F46500FA1481 /* Base */,
 			);
 			name = Storyboard1.storyboard;
+			sourceTree = "<group>";
+		};
+		A959C4CF1B57F4AB00FA1481 /* Storyboard2.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A959C4D01B57F4AB00FA1481 /* Base */,
+			);
+			name = Storyboard2.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
