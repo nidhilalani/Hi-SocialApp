@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D8D96B7D-9139-45FC-ADC1-1E88C699E797</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HiSocialApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9505EA16E4D332E50AF73E1FD6C3546585D206BE</key>
+		<string>https://github.com/nidhilalani/Hi-SocialApp</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HiSocialApp/HiSocialApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9505EA16E4D332E50AF73E1FD6C3546585D206BE</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nidhilalani/Hi-SocialApp</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9505EA16E4D332E50AF73E1FD6C3546585D206BE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9505EA16E4D332E50AF73E1FD6C3546585D206BE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Training</string>
+		</dict>
+	</array>
+</dict>
+</plist>
