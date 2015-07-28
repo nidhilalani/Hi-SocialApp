@@ -19,6 +19,9 @@
 		A959C4A91B57F44C00FA1481 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A959C4A81B57F44C00FA1481 /* main.m */; };
 		A959C4B41B57F44C00FA1481 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A959C4B31B57F44C00FA1481 /* Images.xcassets */; };
 		A959C4C31B57F44C00FA1481 /* HiSocialAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A959C4C21B57F44C00FA1481 /* HiSocialAppTests.m */; };
+		A969DA671B67B7E3003A1D1C /* IMG-20150713-WA0002 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = A969DA641B67B7E3003A1D1C /* IMG-20150713-WA0002 (1).png */; };
+		A969DA681B67B7E3003A1D1C /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = A969DA651B67B7E3003A1D1C /* main.png */; };
+		A969DA691B67B7E3003A1D1C /* projectbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A969DA661B67B7E3003A1D1C /* projectbg.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		A959C4BC1B57F44C00FA1481 /* HiSocialAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiSocialAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A959C4C11B57F44C00FA1481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A959C4C21B57F44C00FA1481 /* HiSocialAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HiSocialAppTests.m; sourceTree = "<group>"; };
+		A969DA641B67B7E3003A1D1C /* IMG-20150713-WA0002 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IMG-20150713-WA0002 (1).png"; sourceTree = "<group>"; };
+		A969DA651B67B7E3003A1D1C /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
+		A969DA661B67B7E3003A1D1C /* projectbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = projectbg.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,9 @@
 				A91A63D61B67B5D100A8A5A6 /* Storyboard_3.storyboard */,
 				A91A63D81B67B5D100A8A5A6 /* Storyboard1.storyboard */,
 				A91A63DA1B67B5D100A8A5A6 /* Storyboard2.storyboard */,
+				A969DA641B67B7E3003A1D1C /* IMG-20150713-WA0002 (1).png */,
+				A969DA651B67B7E3003A1D1C /* main.png */,
+				A969DA661B67B7E3003A1D1C /* projectbg.jpg */,
 				A959C4A51B57F44C00FA1481 /* HiSocialApp */,
 				A959C4BF1B57F44C00FA1481 /* HiSocialAppTests */,
 				A959C4A41B57F44C00FA1481 /* Products */,
@@ -271,13 +280,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A969DA671B67B7E3003A1D1C /* IMG-20150713-WA0002 (1).png in Resources */,
 				A91A63E01B67B5D100A8A5A6 /* Storyboard2.storyboard in Resources */,
 				A91A63DF1B67B5D100A8A5A6 /* Storyboard1.storyboard in Resources */,
 				A91A63DC1B67B5D100A8A5A6 /* LaunchScreen.xib in Resources */,
 				A91A63DD1B67B5D100A8A5A6 /* Main.storyboard in Resources */,
 				A91A63D11B67B5B400A8A5A6 /* Signup in Resources */,
+				A969DA681B67B7E3003A1D1C /* main.png in Resources */,
 				A91A63DE1B67B5D100A8A5A6 /* Storyboard_3.storyboard in Resources */,
 				A959C4B41B57F44C00FA1481 /* Images.xcassets in Resources */,
+				A969DA691B67B7E3003A1D1C /* projectbg.jpg in Resources */,
 				A91A63D01B67B5B400A8A5A6 /* LoginVC in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
