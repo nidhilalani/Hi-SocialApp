@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "Signup.h"
 @interface ViewController ()
 
 @end
@@ -24,4 +24,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)btnSignUpAction:(id)sender {
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Storyboard1" bundle:nil];
+    
+    Signup *signUpVC = [storyboard instantiateViewControllerWithIdentifier:@"Signup"];
+    [self.navigationController pushViewController:signUpVC animated:YES];
+
+}
 @end
