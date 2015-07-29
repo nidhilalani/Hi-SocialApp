@@ -47,6 +47,7 @@
 		A969DA671B67B7E3003A1D1C /* IMG-20150713-WA0002 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = A969DA641B67B7E3003A1D1C /* IMG-20150713-WA0002 (1).png */; };
 		A969DA681B67B7E3003A1D1C /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = A969DA651B67B7E3003A1D1C /* main.png */; };
 		A969DA691B67B7E3003A1D1C /* projectbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A969DA661B67B7E3003A1D1C /* projectbg.jpg */; };
+		A9C97D5E1B68F76A000A202F /* Storyboard4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C97D5D1B68F76A000A202F /* Storyboard4.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,7 @@
 		A969DA641B67B7E3003A1D1C /* IMG-20150713-WA0002 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IMG-20150713-WA0002 (1).png"; sourceTree = "<group>"; };
 		A969DA651B67B7E3003A1D1C /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
 		A969DA661B67B7E3003A1D1C /* projectbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = projectbg.jpg; sourceTree = "<group>"; };
+		A9C97D5D1B68F76A000A202F /* Storyboard4.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard4.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +279,7 @@
 				A913790C1B68E86C005E008F /* ParseUI.framework */,
 				A91A63D21B67B5D100A8A5A6 /* LaunchScreen.xib */,
 				A91A63D41B67B5D100A8A5A6 /* Main.storyboard */,
+				A9C97D5D1B68F76A000A202F /* Storyboard4.storyboard */,
 				A91A63D61B67B5D100A8A5A6 /* Storyboard_3.storyboard */,
 				A91A63D81B67B5D100A8A5A6 /* Storyboard1.storyboard */,
 				A91A63DA1B67B5D100A8A5A6 /* Storyboard2.storyboard */,
@@ -424,6 +427,7 @@
 				A969DA681B67B7E3003A1D1C /* main.png in Resources */,
 				A91A63DE1B67B5D100A8A5A6 /* Storyboard_3.storyboard in Resources */,
 				A959C4B41B57F44C00FA1481 /* Images.xcassets in Resources */,
+				A9C97D5E1B68F76A000A202F /* Storyboard4.storyboard in Resources */,
 				A969DA691B67B7E3003A1D1C /* projectbg.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
