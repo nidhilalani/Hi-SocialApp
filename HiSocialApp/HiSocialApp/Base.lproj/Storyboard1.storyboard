@@ -51,7 +51,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="SD9-Kz-RRi" kind="push" id="Mns-98-IVP"/>
+                                    <action selector="btnSignUpAction:" destination="0q6-Hi-iUY" eventType="touchUpInside" id="G7I-G6-jrp"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="w0b-gZ-j2d">
@@ -209,7 +209,7 @@
         <!--Signup-->
         <scene sceneID="LEb-XV-Ftt">
             <objects>
-                <viewController id="SD9-Kz-RRi" customClass="Signup" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Signup" id="SD9-Kz-RRi" customClass="Signup" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tnw-w7-DbY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -349,7 +349,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="F4g-rd-NVf"/>
                     <connections>
-                        <outlet property="lblGender" destination="MNs-03-J2R" id="1Gf-mj-kVC"/>
+                        <outlet property="lblGender" destination="MNs-03-J2R" id="1op-QU-iiG"/>
                         <outlet property="swiGender" destination="wzG-4h-Q7K" id="8Mi-p7-2un"/>
                         <outlet property="txtConfirmPassword" destination="DD0-XH-cQD" id="AYL-AU-d33"/>
                         <outlet property="txtEmailId" destination="4X4-p3-gN9" id="Ndb-A1-R1K"/>
@@ -373,7 +373,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="5EB-h5-Xha"/>
-    </inferredMetricsTieBreakers>
 </document>
