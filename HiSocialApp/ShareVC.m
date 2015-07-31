@@ -39,11 +39,11 @@
     [self takePhotoMode:YES];
 }
 
-
-
 - (IBAction)btnGallary:(id)sender {
     [self takePhotoMode:NO];
 }
+
+
 -(void)takePhotoMode:(BOOL)isFromCamera{
     
     if (isFromCamera && ![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
