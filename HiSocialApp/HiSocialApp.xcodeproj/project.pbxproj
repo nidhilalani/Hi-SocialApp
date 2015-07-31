@@ -39,6 +39,7 @@
 		A91A63DE1B67B5D100A8A5A6 /* Storyboard_3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91A63D61B67B5D100A8A5A6 /* Storyboard_3.storyboard */; };
 		A91A63DF1B67B5D100A8A5A6 /* Storyboard1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91A63D81B67B5D100A8A5A6 /* Storyboard1.storyboard */; };
 		A91A63E01B67B5D100A8A5A6 /* Storyboard2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91A63DA1B67B5D100A8A5A6 /* Storyboard2.storyboard */; };
+		A9253CAD1B6A503B007E15A8 /* pictures3.png in Resources */ = {isa = PBXBuildFile; fileRef = A9253CAC1B6A503B007E15A8 /* pictures3.png */; };
 		A92AA19B1B5A315E00E378BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A92AA1951B5A315E00E378BE /* ViewController.m */; };
 		A92AA19C1B5A315E00E378BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A92AA1991B5A315E00E378BE /* AppDelegate.m */; };
 		A959C4A91B57F44C00FA1481 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A959C4A81B57F44C00FA1481 /* main.m */; };
@@ -47,6 +48,8 @@
 		A969DA671B67B7E3003A1D1C /* IMG-20150713-WA0002 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = A969DA641B67B7E3003A1D1C /* IMG-20150713-WA0002 (1).png */; };
 		A969DA681B67B7E3003A1D1C /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = A969DA651B67B7E3003A1D1C /* main.png */; };
 		A969DA691B67B7E3003A1D1C /* projectbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A969DA661B67B7E3003A1D1C /* projectbg.jpg */; };
+		A96D6D6B1B6A412E002B1BCF /* photography52.png in Resources */ = {isa = PBXBuildFile; fileRef = A96D6D6A1B6A412E002B1BCF /* photography52.png */; };
+		A96D6D6E1B6A426F002B1BCF /* ShareVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A96D6D6D1B6A426F002B1BCF /* ShareVC.m */; };
 		A9C97D5E1B68F76A000A202F /* Storyboard4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C97D5D1B68F76A000A202F /* Storyboard4.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +98,7 @@
 		A91A63D71B67B5D100A8A5A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HiSocialApp/Base.lproj/Storyboard_3.storyboard; sourceTree = "<group>"; };
 		A91A63D91B67B5D100A8A5A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HiSocialApp/Base.lproj/Storyboard1.storyboard; sourceTree = "<group>"; };
 		A91A63DB1B67B5D100A8A5A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HiSocialApp/Base.lproj/Storyboard2.storyboard; sourceTree = "<group>"; };
+		A9253CAC1B6A503B007E15A8 /* pictures3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pictures3.png; sourceTree = "<group>"; };
 		A92AA1941B5A315E00E378BE /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A92AA1951B5A315E00E378BE /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A92AA1981B5A315E00E378BE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -109,6 +113,9 @@
 		A969DA641B67B7E3003A1D1C /* IMG-20150713-WA0002 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IMG-20150713-WA0002 (1).png"; sourceTree = "<group>"; };
 		A969DA651B67B7E3003A1D1C /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
 		A969DA661B67B7E3003A1D1C /* projectbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = projectbg.jpg; sourceTree = "<group>"; };
+		A96D6D6A1B6A412E002B1BCF /* photography52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photography52.png; sourceTree = "<group>"; };
+		A96D6D6C1B6A426F002B1BCF /* ShareVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareVC.h; sourceTree = "<group>"; };
+		A96D6D6D1B6A426F002B1BCF /* ShareVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareVC.m; sourceTree = "<group>"; };
 		A9C97D5D1B68F76A000A202F /* Storyboard4.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard4.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -283,9 +290,13 @@
 				A91A63D61B67B5D100A8A5A6 /* Storyboard_3.storyboard */,
 				A91A63D81B67B5D100A8A5A6 /* Storyboard1.storyboard */,
 				A91A63DA1B67B5D100A8A5A6 /* Storyboard2.storyboard */,
+				A9253CAC1B6A503B007E15A8 /* pictures3.png */,
+				A96D6D6A1B6A412E002B1BCF /* photography52.png */,
 				A969DA641B67B7E3003A1D1C /* IMG-20150713-WA0002 (1).png */,
 				A969DA651B67B7E3003A1D1C /* main.png */,
 				A969DA661B67B7E3003A1D1C /* projectbg.jpg */,
+				A96D6D6C1B6A426F002B1BCF /* ShareVC.h */,
+				A96D6D6D1B6A426F002B1BCF /* ShareVC.m */,
 				A959C4A51B57F44C00FA1481 /* HiSocialApp */,
 				A959C4BF1B57F44C00FA1481 /* HiSocialAppTests */,
 				A959C4A41B57F44C00FA1481 /* Products */,
@@ -420,11 +431,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A969DA671B67B7E3003A1D1C /* IMG-20150713-WA0002 (1).png in Resources */,
+				A9253CAD1B6A503B007E15A8 /* pictures3.png in Resources */,
 				A91A63E01B67B5D100A8A5A6 /* Storyboard2.storyboard in Resources */,
 				A91A63DF1B67B5D100A8A5A6 /* Storyboard1.storyboard in Resources */,
 				A91A63DC1B67B5D100A8A5A6 /* LaunchScreen.xib in Resources */,
 				A91A63DD1B67B5D100A8A5A6 /* Main.storyboard in Resources */,
 				A969DA681B67B7E3003A1D1C /* main.png in Resources */,
+				A96D6D6B1B6A412E002B1BCF /* photography52.png in Resources */,
 				A91A63DE1B67B5D100A8A5A6 /* Storyboard_3.storyboard in Resources */,
 				A959C4B41B57F44C00FA1481 /* Images.xcassets in Resources */,
 				A9C97D5E1B68F76A000A202F /* Storyboard4.storyboard in Resources */,
@@ -448,6 +461,7 @@
 			files = (
 				A92AA19B1B5A315E00E378BE /* ViewController.m in Sources */,
 				A959C4A91B57F44C00FA1481 /* main.m in Sources */,
+				A96D6D6E1B6A426F002B1BCF /* ShareVC.m in Sources */,
 				A91379331B68EFE5005E008F /* LoginVC.m in Sources */,
 				A92AA19C1B5A315E00E378BE /* AppDelegate.m in Sources */,
 				A91379341B68EFE5005E008F /* Signup.m in Sources */,
