@@ -48,6 +48,9 @@
 		A969DA681B67B7E3003A1D1C /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = A969DA651B67B7E3003A1D1C /* main.png */; };
 		A969DA691B67B7E3003A1D1C /* projectbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A969DA661B67B7E3003A1D1C /* projectbg.jpg */; };
 		A9C97D5E1B68F76A000A202F /* Storyboard4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C97D5D1B68F76A000A202F /* Storyboard4.storyboard */; };
+		B0D825661B6DEA2A00D0D50E /* ShareVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D825651B6DEA2A00D0D50E /* ShareVC.m */; };
+		B0D825681B6DEB2F00D0D50E /* pictures3.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D825671B6DEB2F00D0D50E /* pictures3.png */; };
+		B0D8256A1B6DEB3400D0D50E /* camera115.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D825691B6DEB3400D0D50E /* camera115.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +113,10 @@
 		A969DA651B67B7E3003A1D1C /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
 		A969DA661B67B7E3003A1D1C /* projectbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = projectbg.jpg; sourceTree = "<group>"; };
 		A9C97D5D1B68F76A000A202F /* Storyboard4.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard4.storyboard; sourceTree = "<group>"; };
+		B0D825641B6DEA2A00D0D50E /* ShareVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareVC.h; sourceTree = "<group>"; };
+		B0D825651B6DEA2A00D0D50E /* ShareVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareVC.m; sourceTree = "<group>"; };
+		B0D825671B6DEB2F00D0D50E /* pictures3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pictures3.png; sourceTree = "<group>"; };
+		B0D825691B6DEB3400D0D50E /* camera115.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera115.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +293,7 @@
 				A969DA641B67B7E3003A1D1C /* IMG-20150713-WA0002 (1).png */,
 				A969DA651B67B7E3003A1D1C /* main.png */,
 				A969DA661B67B7E3003A1D1C /* projectbg.jpg */,
+				B0D825631B6DEA0300D0D50E /* ShareVC */,
 				A959C4A51B57F44C00FA1481 /* HiSocialApp */,
 				A959C4BF1B57F44C00FA1481 /* HiSocialAppTests */,
 				A959C4A41B57F44C00FA1481 /* Products */,
@@ -337,6 +345,17 @@
 				A959C4C11B57F44C00FA1481 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0D825631B6DEA0300D0D50E /* ShareVC */ = {
+			isa = PBXGroup;
+			children = (
+				B0D825671B6DEB2F00D0D50E /* pictures3.png */,
+				B0D825691B6DEB3400D0D50E /* camera115.png */,
+				B0D825641B6DEA2A00D0D50E /* ShareVC.h */,
+				B0D825651B6DEA2A00D0D50E /* ShareVC.m */,
+			);
+			name = ShareVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,6 +446,8 @@
 				A969DA681B67B7E3003A1D1C /* main.png in Resources */,
 				A91A63DE1B67B5D100A8A5A6 /* Storyboard_3.storyboard in Resources */,
 				A959C4B41B57F44C00FA1481 /* Images.xcassets in Resources */,
+				B0D8256A1B6DEB3400D0D50E /* camera115.png in Resources */,
+				B0D825681B6DEB2F00D0D50E /* pictures3.png in Resources */,
 				A9C97D5E1B68F76A000A202F /* Storyboard4.storyboard in Resources */,
 				A969DA691B67B7E3003A1D1C /* projectbg.jpg in Resources */,
 			);
@@ -448,6 +469,7 @@
 			files = (
 				A92AA19B1B5A315E00E378BE /* ViewController.m in Sources */,
 				A959C4A91B57F44C00FA1481 /* main.m in Sources */,
+				B0D825661B6DEA2A00D0D50E /* ShareVC.m in Sources */,
 				A91379331B68EFE5005E008F /* LoginVC.m in Sources */,
 				A92AA19C1B5A315E00E378BE /* AppDelegate.m in Sources */,
 				A91379341B68EFE5005E008F /* Signup.m in Sources */,
