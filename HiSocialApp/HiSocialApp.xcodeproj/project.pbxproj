@@ -41,6 +41,7 @@
 		A91A63E01B67B5D100A8A5A6 /* Storyboard2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91A63DA1B67B5D100A8A5A6 /* Storyboard2.storyboard */; };
 		A92AA19B1B5A315E00E378BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A92AA1951B5A315E00E378BE /* ViewController.m */; };
 		A92AA19C1B5A315E00E378BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A92AA1991B5A315E00E378BE /* AppDelegate.m */; };
+		A932493C1B6F8DB900A91593 /* RKDropdownAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = A932493B1B6F8DB900A91593 /* RKDropdownAlert.m */; };
 		A959C4A91B57F44C00FA1481 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A959C4A81B57F44C00FA1481 /* main.m */; };
 		A959C4B41B57F44C00FA1481 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A959C4B31B57F44C00FA1481 /* Images.xcassets */; };
 		A959C4C31B57F44C00FA1481 /* HiSocialAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A959C4C21B57F44C00FA1481 /* HiSocialAppTests.m */; };
@@ -102,6 +103,8 @@
 		A92AA1951B5A315E00E378BE /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A92AA1981B5A315E00E378BE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A92AA1991B5A315E00E378BE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A932493A1B6F8DB900A91593 /* RKDropdownAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKDropdownAlert.h; sourceTree = "<group>"; };
+		A932493B1B6F8DB900A91593 /* RKDropdownAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDropdownAlert.m; sourceTree = "<group>"; };
 		A959C4A31B57F44C00FA1481 /* HiSocialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiSocialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A959C4A71B57F44C00FA1481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A959C4A81B57F44C00FA1481 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -231,6 +234,7 @@
 		A92AA1961B5A315E00E378BE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A93249391B6F8DB900A91593 /* RKDropdownAlert */,
 				A92AA19D1B5A319400E378BE /* Resources */,
 				A92AA1971B5A315E00E378BE /* AppDelegate */,
 			);
@@ -259,6 +263,16 @@
 			children = (
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A93249391B6F8DB900A91593 /* RKDropdownAlert */ = {
+			isa = PBXGroup;
+			children = (
+				A932493A1B6F8DB900A91593 /* RKDropdownAlert.h */,
+				A932493B1B6F8DB900A91593 /* RKDropdownAlert.m */,
+			);
+			name = RKDropdownAlert;
+			path = ThirdParty/RKDropdownAlert;
 			sourceTree = "<group>";
 		};
 		A959C49A1B57F44C00FA1481 = {
@@ -472,6 +486,7 @@
 				B0D825661B6DEA2A00D0D50E /* ShareVC.m in Sources */,
 				A91379331B68EFE5005E008F /* LoginVC.m in Sources */,
 				A92AA19C1B5A315E00E378BE /* AppDelegate.m in Sources */,
+				A932493C1B6F8DB900A91593 /* RKDropdownAlert.m in Sources */,
 				A91379341B68EFE5005E008F /* Signup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
