@@ -42,7 +42,6 @@
 		A92AA19B1B5A315E00E378BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A92AA1951B5A315E00E378BE /* ViewController.m */; };
 		A92AA19C1B5A315E00E378BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A92AA1991B5A315E00E378BE /* AppDelegate.m */; };
 		A932493C1B6F8DB900A91593 /* RKDropdownAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = A932493B1B6F8DB900A91593 /* RKDropdownAlert.m */; };
-		A93249481B6F8FF200A91593 /* RKDropdownAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = A932493F1B6F8FF200A91593 /* RKDropdownAlert.m */; };
 		A93249491B6F8FF200A91593 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A93249411B6F8FF200A91593 /* TPKeyboardAvoidingCollectionView.m */; };
 		A932494A1B6F8FF200A91593 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A93249431B6F8FF200A91593 /* TPKeyboardAvoidingScrollView.m */; };
 		A932494B1B6F8FF200A91593 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A93249451B6F8FF200A91593 /* TPKeyboardAvoidingTableView.m */; };
@@ -110,8 +109,6 @@
 		A92AA1991B5A315E00E378BE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A932493A1B6F8DB900A91593 /* RKDropdownAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKDropdownAlert.h; sourceTree = "<group>"; };
 		A932493B1B6F8DB900A91593 /* RKDropdownAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDropdownAlert.m; sourceTree = "<group>"; };
-		A932493E1B6F8FF200A91593 /* RKDropdownAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKDropdownAlert.h; sourceTree = "<group>"; };
-		A932493F1B6F8FF200A91593 /* RKDropdownAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDropdownAlert.m; sourceTree = "<group>"; };
 		A93249401B6F8FF200A91593 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
 		A93249411B6F8FF200A91593 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
 		A93249421B6F8FF200A91593 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
@@ -294,8 +291,6 @@
 		A932493D1B6F8FF200A91593 /* TPKeyboardAvoiding */ = {
 			isa = PBXGroup;
 			children = (
-				A932493E1B6F8FF200A91593 /* RKDropdownAlert.h */,
-				A932493F1B6F8FF200A91593 /* RKDropdownAlert.m */,
 				A93249401B6F8FF200A91593 /* TPKeyboardAvoidingCollectionView.h */,
 				A93249411B6F8FF200A91593 /* TPKeyboardAvoidingCollectionView.m */,
 				A93249421B6F8FF200A91593 /* TPKeyboardAvoidingScrollView.h */,
@@ -525,7 +520,6 @@
 				A92AA19C1B5A315E00E378BE /* AppDelegate.m in Sources */,
 				A932493C1B6F8DB900A91593 /* RKDropdownAlert.m in Sources */,
 				A932494B1B6F8FF200A91593 /* TPKeyboardAvoidingTableView.m in Sources */,
-				A93249481B6F8FF200A91593 /* RKDropdownAlert.m in Sources */,
 				A91379341B68EFE5005E008F /* Signup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -682,11 +676,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/HiSocialApp/Model/Framework/parse-library-1.7.5",
 				);
+				GCC_VERSION = "";
 				INFOPLIST_FILE = HiSocialApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -698,11 +694,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/HiSocialApp/Model/Framework/parse-library-1.7.5",
 				);
+				GCC_VERSION = "";
 				INFOPLIST_FILE = HiSocialApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};

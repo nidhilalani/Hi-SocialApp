@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface Signup : UIViewController<UITextFieldDelegate>
+{
+    //NSString *checkstring;
+}
+
 @property (weak, nonatomic) IBOutlet UITextField *txtFirstName;
 @property (weak, nonatomic) IBOutlet UITextField *txtLastName;
 @property (weak, nonatomic) IBOutlet UITextField *txtEmailId;
@@ -21,5 +25,6 @@
 
 - (IBAction)btnSignUpAction:(id)sender;
 - (IBAction)SwitchGenderAction:(id)sender;
+
 
 @end

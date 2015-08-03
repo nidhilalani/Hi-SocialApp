@@ -11,11 +11,7 @@
 #import "RKDropdownAlert.h"
 
 @interface Signup ()
-{
-    NSString *message;
-    BOOL isshouldBlank;
 
-}
 
 @end
 
@@ -45,6 +41,11 @@
 */
 
 - (IBAction)btnSignUpAction:(id)sender {
+   
+    
+    
+#pragma  Alerts
+    
     if ([self.txtFirstName.text isEqual:@""]) {
         [RKDropdownAlert title:@"Enter First Name "];
     }else if ([self.txtLastName.text isEqual:@""])
@@ -71,6 +72,8 @@
     
     NSString *email=_txtEmailId.text;
         NSArray *subStrings = [email componentsSeparatedByString:@"%@"];
+    
+
     
     
     NSString *username=[@"%@",subStrings objectAtIndex:0];
@@ -109,6 +112,16 @@
         
    
 }
+
+//-(BOOL) NSStringIsValidEmail:(NSString *)checkString
+//{
+//    BOOL stricterFilter = NO;
+//    NSString *stricterFilterString = @"^[A-Z0-9a-z\\._%+-]+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2,4}$";
+//    NSString *laxString = @"^.+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2}[A-Za-z]*$";
+//    NSString *emailRegex = stricterFilter ? stricterFilterString : laxString;
+//    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+//    return [emailTest evaluateWithObject:checkString];
+//}
 #pragma  textfield Delegate
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
