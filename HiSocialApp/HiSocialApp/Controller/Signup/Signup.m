@@ -8,8 +8,14 @@
 
 #import "Signup.h"
 #import <Parse/Parse.h>
+#import "RKDropdownAlert.h"
 
 @interface Signup ()
+{
+    NSString *message;
+    BOOL isshouldBlank;
+
+}
 
 @end
 
@@ -39,16 +45,32 @@
 */
 
 - (IBAction)btnSignUpAction:(id)sender {
+    if ([self.txtFirstName.text isEqual:@""]) {
+        [RKDropdownAlert title:@"Enter First Name "];
+    }else if ([self.txtLastName.text isEqual:@""])
+    {
+        [RKDropdownAlert title:@"Enter Last Name "];
+    }else if ([self.txtEmailId.text isEqual:@""]) {
+        
+        [RKDropdownAlert title:@"Email Required"];
+    }else if ([self.txtMobNo.text isEqual:@""]){
+        [RKDropdownAlert title:@"Enter Mobail Number "];
+    }else if ([self.txtPassword.text isEqual:@""]){
+        [RKDropdownAlert title: @"Enter Password"];
+    }else if ([self.txtConfirmPassword.text isEqual:@""]){
+        [RKDropdownAlert title:@"Enter Password Again"];
+    }
     
-   
-        PFUser *objSignup=[PFUser user];
+    
+    PFUser *objSignup=[PFUser user];
     
         
-        
+
+
+
     
     NSString *email=_txtEmailId.text;
-
-    NSArray *subStrings = [email componentsSeparatedByString:@"@"];
+        NSArray *subStrings = [email componentsSeparatedByString:@"%@"];
     
     
     NSString *username=[@"%@",subStrings objectAtIndex:0];
@@ -86,6 +108,39 @@
          }];
         
    
+}
+#pragma  textfield Delegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+//    BOOL t=[textField resignFirstResponder];
+//    BOOL n=[textField becomeFirstResponder];
+//    if ([_txtEmailId.text isEqualToString:@""]) {
+//        return n;
+//    }
+//    else
+//    {
+//        return t;
+//    }
+    
+//    if ([self.txtFirstName.text isEqual:@""]) {
+//        [RKDropdownAlert title:@"Enter First Name "];
+//    }else if ([self.txtLastName.text isEqual:@""])
+//    {
+//        [RKDropdownAlert title:@"Enter Last Name "];
+//    }else if ([self.txtEmailId.text isEqual:@""]) {
+//        
+//        [RKDropdownAlert title:@"Email Required"];
+//    }else if ([self.txtMobNo.text isEqual:@""]){
+//        [RKDropdownAlert title:@"Enter Mobail Number "];
+//    }else if ([self.txtPassword.text isEqual:@""]){
+//        [RKDropdownAlert title: @"Enter Password"];
+//    }else if ([self.txtConfirmPassword.text isEqual:@""]){
+//        [RKDropdownAlert title:@"Enter Password Again"];
+//    }
+
+    
+    return YES;
 }
 
 - (IBAction)SwitchGenderAction:(id)sender {
