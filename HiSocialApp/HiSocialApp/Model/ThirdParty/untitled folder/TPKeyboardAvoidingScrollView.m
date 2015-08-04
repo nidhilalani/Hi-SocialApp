@@ -1,17 +1,17 @@
 //
-//  TPKeyboardAvoidingCollectionView.m
+//  TPKeyboardAvoidingScrollView.m
 //  TPKeyboardAvoiding
 //
 //  Created by Michael Tyson on 30/09/2013.
-//  Copyright 2015 A Tasty Pixel & The CocoaBots. All rights reserved.
+//  Copyright 2015 A Tasty Pixel. All rights reserved.
 //
 
-#import "TPKeyboardAvoidingCollectionView.h"
+#import "TPKeyboardAvoidingScrollView.h"
 
-@interface TPKeyboardAvoidingCollectionView () <UITextFieldDelegate, UITextViewDelegate>
+@interface TPKeyboardAvoidingScrollView () <UITextFieldDelegate, UITextViewDelegate>
 @end
 
-@implementation TPKeyboardAvoidingCollectionView
+@implementation TPKeyboardAvoidingScrollView
 
 #pragma mark - Setup/Teardown
 
@@ -28,12 +28,6 @@
     return self;
 }
 
-- (id)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout {
-    if ( !(self = [super initWithFrame:frame collectionViewLayout:layout]) ) return nil;
-    [self setup];
-    return self;
-}
-
 -(void)awakeFromNib {
     [self setup];
 }
@@ -42,7 +36,6 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 #if !__has_feature(objc_arc)
     [super dealloc];
-    // asdad
 #endif
 }
 
@@ -52,13 +45,12 @@
 }
 
 -(void)setContentSize:(CGSize)contentSize {
-    if (CGSizeEqualToSize(contentSize, self.contentSize)) {
-        // Prevent triggering contentSize when it's already the same that
-        // cause weird infinte scrolling and locking bug
-        return;
-    }
     [super setContentSize:contentSize];
-    [self TPKeyboardAvoiding_updateContentInset];
+    [self TPKeyboardAvoiding_updateFromContentSizeChange];
+}
+
+- (void)contentSizeToFit {
+    self.contentSize = [self TPKeyboardAvoiding_calculatedContentSizeFromSubviewFrames];
 }
 
 - (BOOL)focusNextTextField {
