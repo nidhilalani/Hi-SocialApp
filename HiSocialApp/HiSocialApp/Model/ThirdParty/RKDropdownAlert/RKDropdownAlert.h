@@ -67,7 +67,7 @@ extern NSString *const RKDropdownAlertDismissAllNotification;
 +(void)title:(NSString*)title message:(NSString*)message backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor time:(NSInteger)seconds delegate:(id<RKDropdownAlertDelegate>)delegate;
 
 +(void)dismissAllAlert;
-
+@property(nonatomic,retain)NSString *DEFAULT_TITLE;
 @property UIColor *defaultViewColor;
 @property UIColor *defaultTextColor;
 @property BOOL isShowing;
