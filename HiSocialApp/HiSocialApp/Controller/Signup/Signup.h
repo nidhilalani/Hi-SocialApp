@@ -10,7 +10,8 @@
 
 @interface Signup : UIViewController<UITextFieldDelegate>
 {
-    //NSString *checkstring;
+    NSString *checkstring;
+    NSString *phoneNumber;
 }
 
 @property (weak, nonatomic) IBOutlet UITextField *txtFirstName;

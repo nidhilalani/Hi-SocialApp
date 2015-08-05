@@ -9,6 +9,8 @@
 #import "LoginVC.h"
 #import "Signup.h"
 #import <Parse/Parse.h>
+#import "RKDropdownAlert.h"
+#import "Constant.h"
 
 @interface LoginVC ()
 
@@ -36,8 +38,8 @@
          }
          else
          {
-             UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"" message:@"Username or Password incorrect.." delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
-             [alert show];
+            
+             [RKDropdownAlert title:@myAppName message:@"Username or password invalid"];
          }
      }
      ];
