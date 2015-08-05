@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A90E2F9D1B72360100E90DF5 /* checked20.png in Resources */ = {isa = PBXBuildFile; fileRef = A90E2F9B1B72360100E90DF5 /* checked20.png */; };
+		A90E2F9E1B72360100E90DF5 /* blank32.png in Resources */ = {isa = PBXBuildFile; fileRef = A90E2F9C1B72360100E90DF5 /* blank32.png */; };
 		A913790D1B68E86C005E008F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91379071B68E86B005E008F /* Bolts.framework */; };
 		A913790E1B68E86C005E008F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91379081B68E86C005E008F /* Parse.framework */; };
 		A913790F1B68E86C005E008F /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91379091B68E86C005E008F /* ParseCrashReporting.framework */; };
@@ -50,6 +52,7 @@
 		A969DA691B67B7E3003A1D1C /* projectbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A969DA661B67B7E3003A1D1C /* projectbg.jpg */; };
 		A96D6D6B1B6A412E002B1BCF /* photography52.png in Resources */ = {isa = PBXBuildFile; fileRef = A96D6D6A1B6A412E002B1BCF /* photography52.png */; };
 		A96D6D6E1B6A426F002B1BCF /* ShareVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A96D6D6D1B6A426F002B1BCF /* ShareVC.m */; };
+		A97615A71B7227E900EC7624 /* ShareWithVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A97615A61B7227E900EC7624 /* ShareWithVC.m */; };
 		A9C97D5E1B68F76A000A202F /* Storyboard4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C97D5D1B68F76A000A202F /* Storyboard4.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +67,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A90E2F9B1B72360100E90DF5 /* checked20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked20.png; sourceTree = "<group>"; };
+		A90E2F9C1B72360100E90DF5 /* blank32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank32.png; sourceTree = "<group>"; };
 		A91379071B68E86B005E008F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "HiSocialApp/Model/Framework/parse-library-1.7.5/Bolts.framework"; sourceTree = "<group>"; };
 		A91379081B68E86C005E008F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "HiSocialApp/Model/Framework/parse-library-1.7.5/Parse.framework"; sourceTree = "<group>"; };
 		A91379091B68E86C005E008F /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "HiSocialApp/Model/Framework/parse-library-1.7.5/ParseCrashReporting.framework"; sourceTree = "<group>"; };
@@ -114,8 +119,10 @@
 		A969DA651B67B7E3003A1D1C /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
 		A969DA661B67B7E3003A1D1C /* projectbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = projectbg.jpg; sourceTree = "<group>"; };
 		A96D6D6A1B6A412E002B1BCF /* photography52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photography52.png; sourceTree = "<group>"; };
-		A96D6D6C1B6A426F002B1BCF /* ShareVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareVC.h; sourceTree = "<group>"; };
-		A96D6D6D1B6A426F002B1BCF /* ShareVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareVC.m; sourceTree = "<group>"; };
+		A96D6D6C1B6A426F002B1BCF /* ShareVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShareVC.h; path = ../../ShareVC.h; sourceTree = "<group>"; };
+		A96D6D6D1B6A426F002B1BCF /* ShareVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShareVC.m; path = ../../ShareVC.m; sourceTree = "<group>"; };
+		A97615A51B7227E900EC7624 /* ShareWithVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareWithVC.h; sourceTree = "<group>"; };
+		A97615A61B7227E900EC7624 /* ShareWithVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareWithVC.m; sourceTree = "<group>"; };
 		A9C97D5D1B68F76A000A202F /* Storyboard4.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard4.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -212,6 +219,7 @@
 		A92AA1921B5A315E00E378BE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A92B566B1B70D97B00FAFE3F /* ShareVC */,
 				A913792D1B68EFE5005E008F /* LoginVC */,
 				A91379301B68EFE5005E008F /* Signup */,
 				A92AA1931B5A315E00E378BE /* ViewController */,
@@ -261,6 +269,19 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		A92B566B1B70D97B00FAFE3F /* ShareVC */ = {
+			isa = PBXGroup;
+			children = (
+				A96D6D6C1B6A426F002B1BCF /* ShareVC.h */,
+				A96D6D6D1B6A426F002B1BCF /* ShareVC.m */,
+				A90E2F9B1B72360100E90DF5 /* checked20.png */,
+				A90E2F9C1B72360100E90DF5 /* blank32.png */,
+				A97615A51B7227E900EC7624 /* ShareWithVC.h */,
+				A97615A61B7227E900EC7624 /* ShareWithVC.m */,
+			);
+			name = ShareVC;
+			sourceTree = "<group>";
+		};
 		A959C49A1B57F44C00FA1481 = {
 			isa = PBXGroup;
 			children = (
@@ -295,8 +316,6 @@
 				A969DA641B67B7E3003A1D1C /* IMG-20150713-WA0002 (1).png */,
 				A969DA651B67B7E3003A1D1C /* main.png */,
 				A969DA661B67B7E3003A1D1C /* projectbg.jpg */,
-				A96D6D6C1B6A426F002B1BCF /* ShareVC.h */,
-				A96D6D6D1B6A426F002B1BCF /* ShareVC.m */,
 				A959C4A51B57F44C00FA1481 /* HiSocialApp */,
 				A959C4BF1B57F44C00FA1481 /* HiSocialAppTests */,
 				A959C4A41B57F44C00FA1481 /* Products */,
@@ -431,11 +450,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A969DA671B67B7E3003A1D1C /* IMG-20150713-WA0002 (1).png in Resources */,
+				A90E2F9E1B72360100E90DF5 /* blank32.png in Resources */,
 				A9253CAD1B6A503B007E15A8 /* pictures3.png in Resources */,
 				A91A63E01B67B5D100A8A5A6 /* Storyboard2.storyboard in Resources */,
 				A91A63DF1B67B5D100A8A5A6 /* Storyboard1.storyboard in Resources */,
 				A91A63DC1B67B5D100A8A5A6 /* LaunchScreen.xib in Resources */,
 				A91A63DD1B67B5D100A8A5A6 /* Main.storyboard in Resources */,
+				A90E2F9D1B72360100E90DF5 /* checked20.png in Resources */,
 				A969DA681B67B7E3003A1D1C /* main.png in Resources */,
 				A96D6D6B1B6A412E002B1BCF /* photography52.png in Resources */,
 				A91A63DE1B67B5D100A8A5A6 /* Storyboard_3.storyboard in Resources */,
@@ -459,6 +480,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A97615A71B7227E900EC7624 /* ShareWithVC.m in Sources */,
 				A92AA19B1B5A315E00E378BE /* ViewController.m in Sources */,
 				A959C4A91B57F44C00FA1481 /* main.m in Sources */,
 				A96D6D6E1B6A426F002B1BCF /* ShareVC.m in Sources */,

@@ -72,7 +72,7 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
     UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
-    UIImage *origionalImage = [info objectForKey:UIImagePickerControllerOriginalImage];
+
     
     
     
