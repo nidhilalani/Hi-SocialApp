@@ -8,6 +8,7 @@
 
 #import "NSString+validation.h"
 #import <UIKit/UIKit.h>
+#import "RKDropdownAlert.h"
 @implementation NSString (validation)
 
 -(BOOL)stringa1:(NSString *)str
@@ -22,17 +23,26 @@
     {
         return YES;
     }
-    
 }
 -(void)username:(NSString *)str
 {
     NSString *atoz=@"[A-Za-z]";
     NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"%@", atoz];
     if ([emailTest evaluateWithObject:str]) {
-        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"" message:@"Enter Valid User Name ." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-        [alert show];
-
-    } ;
+       [RKDropdownAlert title:@"SHARYY" message:@"invalid User Name"];
+       // [RKDropdownAlert show];
+    }
+}
+-(BOOL)phone:(NSString *)number
+{
+    if (number.length==10) {
+        return YES;
+    }
+    else
+    {
+        [RKDropdownAlert title:@"SHARRY" message:@"Number is not valid..."];
+        return NO;
+    }
 }
 -(BOOL)conformpassword:(NSString *)pass :(NSString*)conpass
 {
@@ -44,19 +54,16 @@
         }
         else
         {
-            UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"" message:@"Password And Confirm Password is not match.." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-            [alert show];
+            [RKDropdownAlert title:@"SHARRY" message:@"Password And confirm password is not match"];
+//            [RKDropdownAlert show];
             return NO;
         }
     }
     else
-    {
-        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"" message:@"Password Length is Min 6." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-        [alert show];
+{
+    [ RKDropdownAlert title:@"SHARRY" message:@"Password Legth Must be more then 6"];
         return NO;
-
     }
-    
 }
 -(BOOL) Emailvalidate:(NSString *)mail
 {
@@ -66,6 +73,7 @@
     NSString *emailRegex = stricterFilter ? stricterFilterString : laxString;
     NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
     return [emailTest evaluateWithObject:mail];
+    
 }
 
 @end

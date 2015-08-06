@@ -9,6 +9,9 @@
 #import "Signup.h"
 #import <Parse/Parse.h>
 #import "RKDropdownAlert.h"
+#import "NSString+validation.h"
+#import "Constant.h"
+
 
 @interface Signup ()
 
@@ -43,119 +46,111 @@
 - (IBAction)btnSignUpAction:(id)sender {
    
     
+   NSString *email=_txtEmailId.text;
     
 #pragma  Alerts
+//
+    NSString *str=[[NSString alloc]init];
+    str=_txtMobNo.text;
     
     if ([self.txtFirstName.text isEqual:@""]) {
-        [RKDropdownAlert title:@"Enter First Name "];
-    }else if ([self.txtLastName.text isEqual:@""])
-    {
-        [RKDropdownAlert title:@"Enter Last Name "];
-    }else if ([self.txtEmailId.text isEqual:@""]) {
-        
-        [RKDropdownAlert title:@"Email Required"];
+        [RKDropdownAlert title:@myAppName message:@"Please enter first name"];
+        return;
+    }else if ([self.txtLastName.text isEqual:@""]){
+        [RKDropdownAlert title:@myAppName message:@"Please enter last name"];
+        return;
+    }else if ([self.txtEmailId.text isEqual:@""]){
+        [RKDropdownAlert title:@myAppName message:@"Please enter emailid"];
+        return;
+    }else if (![email Emailvalidate:email]) {
+        [RKDropdownAlert title:@myAppName message:@"Please enter valid emailid"];
+        return;
+
     }else if ([self.txtMobNo.text isEqual:@""]){
-        [RKDropdownAlert title:@"Enter Mobail Number "];
-    }else if ([self.txtPassword.text isEqual:@""]){
-        [RKDropdownAlert title: @"Enter Password"];
+        [RKDropdownAlert title:@myAppName message:@"Please enter mobail number"];
+        return;
+
+    }else if ([self validatePhone:self.txtMobNo.text]){
+        [RKDropdownAlert title:@myAppName message:@"Please Enter Numeric Value Only"];
+    }
+    else if ([self.txtPassword.text isEqual:@""]){
+        [RKDropdownAlert title:@myAppName message:@"Please enter password"];
+        return;
+
     }else if ([self.txtConfirmPassword.text isEqual:@""]){
-        [RKDropdownAlert title:@"Enter Password Again"];
+        [RKDropdownAlert title:@myAppName message:@"Please enter password again"];
+        
+        return;
+
+    }
+    else if(str.length!=10)
+    {
+        [RKDropdownAlert title:@"Number Must be 10 digit long"];
+        
+        return;
+
     }
     
+   
+    NSArray *subStrings = [email componentsSeparatedByString:@"%@"];
     
-    PFUser *objSignup=[PFUser user];
+    NSString *PASSWD=_txtPassword.text;
+    NSString *CPASSWD=_txtConfirmPassword.text;
     
+    
+   
+    
+    if ([PASSWD conformpassword:PASSWD :CPASSWD]) {
         
-
-
-
+                PFUser *objSignup=[PFUser user];
     
-    NSString *email=_txtEmailId.text;
-        NSArray *subStrings = [email componentsSeparatedByString:@"%@"];
+                NSString *username=[@"%@",subStrings objectAtIndex:0];
+                objSignup.username=username;
+                objSignup.email=_txtEmailId.text;
+                objSignup.password=_txtPassword.text;
     
-
-    
-    
-    NSString *username=[@"%@",subStrings objectAtIndex:0];
-    objSignup.username=username;
-    objSignup.email=_txtEmailId.text;
-    objSignup.password=_txtPassword.text;
-    
-    
-
-        objSignup[@"FirstName"]=_txtFirstName.text;
-        objSignup[@"LastName"]=_txtLastName.text;
-        objSignup[@"MobileNo"]=_txtMobNo.text;
+                objSignup[@"FirstName"]=_txtFirstName.text;
+                objSignup[@"LastName"]=_txtLastName.text;
+                objSignup[@"MobileNo"]=_txtMobNo.text;
     
        // objSignup[@"ConfirmPassword"]=_txtConfirmPassword.text;
-        if(_swiGender.on)
-        {
+                if(_swiGender.on)
+                {
             
-            objSignup[@"Gender"]=_lblGender.text;
-        }
-        else
-        {
-            objSignup[@"Gender"]=_lblGender.text;
-        }
+                    objSignup[@"Gender"]=_lblGender.text;
+                }
+                else
+                {
+                        objSignup[@"Gender"]=_lblGender.text;
+                }
     
         
-        [objSignup signUpInBackgroundWithBlock:^(BOOL succ,NSError *error)
-         {
-             if (succ) {
-                 NSLog(@"Success");
-             }else {
+                [objSignup signUpInBackgroundWithBlock:^(BOOL succ,NSError *error)
+                 {
+                     if (succ) {
+                         NSLog(@"Success");
+                     }else {
                  
-                 NSLog(@"error...%@",error.description);
+                         NSLog(@"error...%ld",(long)error.code);
+                         if (error.code==202) {
+                                [RKDropdownAlert title:@"Username already taken "];
+                         }
                  
-             }
-         }];
-        
-   
+                     }
+                 }];
+ 
+    }
 }
-
-//-(BOOL) NSStringIsValidEmail:(NSString *)checkString
-//{
-//    BOOL stricterFilter = NO;
-//    NSString *stricterFilterString = @"^[A-Z0-9a-z\\._%+-]+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2,4}$";
-//    NSString *laxString = @"^.+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2}[A-Za-z]*$";
-//    NSString *emailRegex = stricterFilter ? stricterFilterString : laxString;
-//    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
-//    return [emailTest evaluateWithObject:checkString];
-//}
-#pragma  textfield Delegate
-
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
+    
+    
+- (BOOL)validatePhone:(NSString *)phoneNumber
 {
-//    BOOL t=[textField resignFirstResponder];
-//    BOOL n=[textField becomeFirstResponder];
-//    if ([_txtEmailId.text isEqualToString:@""]) {
-//        return n;
-//    }
-//    else
-//    {
-//        return t;
-//    }
+    NSString *phoneRegex = @"^((\\+)|(00))[0-9]{6,14}$";
+    NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", phoneRegex];
     
-//    if ([self.txtFirstName.text isEqual:@""]) {
-//        [RKDropdownAlert title:@"Enter First Name "];
-//    }else if ([self.txtLastName.text isEqual:@""])
-//    {
-//        [RKDropdownAlert title:@"Enter Last Name "];
-//    }else if ([self.txtEmailId.text isEqual:@""]) {
-//        
-//        [RKDropdownAlert title:@"Email Required"];
-//    }else if ([self.txtMobNo.text isEqual:@""]){
-//        [RKDropdownAlert title:@"Enter Mobail Number "];
-//    }else if ([self.txtPassword.text isEqual:@""]){
-//        [RKDropdownAlert title: @"Enter Password"];
-//    }else if ([self.txtConfirmPassword.text isEqual:@""]){
-//        [RKDropdownAlert title:@"Enter Password Again"];
-//    }
-
+    return [phoneTest evaluateWithObject:phoneNumber];
     
-    return YES;
 }
-
 - (IBAction)SwitchGenderAction:(id)sender {
     
     if(_swiGender.on)
@@ -167,4 +162,7 @@
         _lblGender.text=@"Female";
     }
 }
+
+
+
 @end
