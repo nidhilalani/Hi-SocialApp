@@ -43,6 +43,8 @@
 		A92AA19C1B5A315E00E378BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A92AA1991B5A315E00E378BE /* AppDelegate.m */; };
 		A932493C1B6F8DB900A91593 /* RKDropdownAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = A932493B1B6F8DB900A91593 /* RKDropdownAlert.m */; };
 		A932495C1B6FAE3B00A91593 /* NSString+validation.m in Sources */ = {isa = PBXBuildFile; fileRef = A932495B1B6FAE3B00A91593 /* NSString+validation.m */; };
+		A93B5DD31B737AA3004DB187 /* ImageGallaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A93B5DD11B737AA3004DB187 /* ImageGallaryVC.m */; };
+		A93B5DD61B737B12004DB187 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A93B5DD51B737B12004DB187 /* HomeVC.m */; };
 		A959C4A91B57F44C00FA1481 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A959C4A81B57F44C00FA1481 /* main.m */; };
 		A959C4B41B57F44C00FA1481 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A959C4B31B57F44C00FA1481 /* Images.xcassets */; };
 		A959C4C31B57F44C00FA1481 /* HiSocialAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A959C4C21B57F44C00FA1481 /* HiSocialAppTests.m */; };
@@ -113,6 +115,10 @@
 		A932493B1B6F8DB900A91593 /* RKDropdownAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDropdownAlert.m; sourceTree = "<group>"; };
 		A932495A1B6FAE3B00A91593 /* NSString+validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+validation.h"; sourceTree = "<group>"; };
 		A932495B1B6FAE3B00A91593 /* NSString+validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+validation.m"; sourceTree = "<group>"; };
+		A93B5DD01B737AA3004DB187 /* ImageGallaryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageGallaryVC.h; sourceTree = "<group>"; };
+		A93B5DD11B737AA3004DB187 /* ImageGallaryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageGallaryVC.m; sourceTree = "<group>"; };
+		A93B5DD41B737B12004DB187 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		A93B5DD51B737B12004DB187 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
 		A959C4A31B57F44C00FA1481 /* HiSocialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiSocialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A959C4A71B57F44C00FA1481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A959C4A81B57F44C00FA1481 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -250,6 +256,7 @@
 		A92AA1921B5A315E00E378BE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A93B5DCD1B737AA3004DB187 /* Home */,
 				A913792D1B68EFE5005E008F /* LoginVC */,
 				A91379301B68EFE5005E008F /* Signup */,
 				A92AA1931B5A315E00E378BE /* ViewController */,
@@ -336,6 +343,17 @@
 				A932495B1B6FAE3B00A91593 /* NSString+validation.m */,
 			);
 			name = VALIDATION;
+			sourceTree = "<group>";
+		};
+		A93B5DCD1B737AA3004DB187 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A93B5DD41B737B12004DB187 /* HomeVC.h */,
+				A93B5DD51B737B12004DB187 /* HomeVC.m */,
+				A93B5DD01B737AA3004DB187 /* ImageGallaryVC.h */,
+				A93B5DD11B737AA3004DB187 /* ImageGallaryVC.m */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		A959C49A1B57F44C00FA1481 = {
@@ -535,7 +553,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A92AA19B1B5A315E00E378BE /* ViewController.m in Sources */,
+				A93B5DD31B737AA3004DB187 /* ImageGallaryVC.m in Sources */,
 				A959C4A91B57F44C00FA1481 /* main.m in Sources */,
+				A93B5DD61B737B12004DB187 /* HomeVC.m in Sources */,
 				B0D825661B6DEA2A00D0D50E /* ShareVC.m in Sources */,
 				A9BC4FBC1B70E8D4009DB562 /* TPKeyboardAvoidingTableView.m in Sources */,
 				A91379331B68EFE5005E008F /* LoginVC.m in Sources */,
