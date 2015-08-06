@@ -47,7 +47,6 @@
 		A969DA671B67B7E3003A1D1C /* IMG-20150713-WA0002 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = A969DA641B67B7E3003A1D1C /* IMG-20150713-WA0002 (1).png */; };
 		A969DA681B67B7E3003A1D1C /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = A969DA651B67B7E3003A1D1C /* main.png */; };
 		A969DA691B67B7E3003A1D1C /* projectbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A969DA661B67B7E3003A1D1C /* projectbg.jpg */; };
-		A973B4451B70E3890071DF1C /* FrontViewControlerr.m in Sources */ = {isa = PBXBuildFile; fileRef = A973B4301B70E3890071DF1C /* FrontViewControlerr.m */; };
 		A973B4461B70E3890071DF1C /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A973B4321B70E3890071DF1C /* FrontViewController.m */; };
 		A973B4471B70E3890071DF1C /* HOMEVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A973B4341B70E3890071DF1C /* HOMEVC.m */; };
 		A973B4481B70E3890071DF1C /* house158.png in Resources */ = {isa = PBXBuildFile; fileRef = A973B4351B70E3890071DF1C /* house158.png */; };
@@ -57,8 +56,8 @@
 		A973B44C1B70E3890071DF1C /* RearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A973B43C1B70E3890071DF1C /* RearViewController.m */; };
 		A973B44D1B70E3890071DF1C /* settings56.png in Resources */ = {isa = PBXBuildFile; fileRef = A973B43D1B70E3890071DF1C /* settings56.png */; };
 		A973B44E1B70E3890071DF1C /* SETTINGSVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A973B43F1B70E3890071DF1C /* SETTINGSVC.m */; };
-		A973B44F1B70E3890071DF1C /* sliderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A973B4411B70E3890071DF1C /* sliderVC.m */; };
 		A973B4501B70E3890071DF1C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A973B4441B70E3890071DF1C /* SWRevealViewController.m */; };
+		A973B4681B70E7F10071DF1C /* RKDropdownAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = A973B4671B70E7F10071DF1C /* RKDropdownAlert.m */; };
 		A9C97D5E1B68F76A000A202F /* Storyboard4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C97D5D1B68F76A000A202F /* Storyboard4.storyboard */; };
 		B0D825661B6DEA2A00D0D50E /* ShareVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D825651B6DEA2A00D0D50E /* ShareVC.m */; };
 		B0D825681B6DEB2F00D0D50E /* pictures3.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D825671B6DEB2F00D0D50E /* pictures3.png */; };
@@ -124,7 +123,6 @@
 		A969DA641B67B7E3003A1D1C /* IMG-20150713-WA0002 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IMG-20150713-WA0002 (1).png"; sourceTree = "<group>"; };
 		A969DA651B67B7E3003A1D1C /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
 		A969DA661B67B7E3003A1D1C /* projectbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = projectbg.jpg; sourceTree = "<group>"; };
-		A973B4301B70E3890071DF1C /* FrontViewControlerr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontViewControlerr.m; sourceTree = "<group>"; };
 		A973B4311B70E3890071DF1C /* FrontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontViewController.h; sourceTree = "<group>"; };
 		A973B4321B70E3890071DF1C /* FrontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontViewController.m; sourceTree = "<group>"; };
 		A973B4331B70E3890071DF1C /* HOMEVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HOMEVC.h; sourceTree = "<group>"; };
@@ -140,11 +138,10 @@
 		A973B43D1B70E3890071DF1C /* settings56.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings56.png; sourceTree = "<group>"; };
 		A973B43E1B70E3890071DF1C /* SETTINGSVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETTINGSVC.h; sourceTree = "<group>"; };
 		A973B43F1B70E3890071DF1C /* SETTINGSVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETTINGSVC.m; sourceTree = "<group>"; };
-		A973B4401B70E3890071DF1C /* sliderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sliderVC.h; sourceTree = "<group>"; };
-		A973B4411B70E3890071DF1C /* sliderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sliderVC.m; sourceTree = "<group>"; };
-		A973B4421B70E3890071DF1C /* SliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderViewController.h; sourceTree = "<group>"; };
 		A973B4431B70E3890071DF1C /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		A973B4441B70E3890071DF1C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		A973B4661B70E7F10071DF1C /* RKDropdownAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKDropdownAlert.h; sourceTree = "<group>"; };
+		A973B4671B70E7F10071DF1C /* RKDropdownAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDropdownAlert.m; sourceTree = "<group>"; };
 		A9C97D5D1B68F76A000A202F /* Storyboard4.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard4.storyboard; sourceTree = "<group>"; };
 		B0D825641B6DEA2A00D0D50E /* ShareVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareVC.h; sourceTree = "<group>"; };
 		B0D825651B6DEA2A00D0D50E /* ShareVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareVC.m; sourceTree = "<group>"; };
@@ -245,27 +242,7 @@
 		A92AA1921B5A315E00E378BE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A973B4301B70E3890071DF1C /* FrontViewControlerr.m */,
-				A973B4311B70E3890071DF1C /* FrontViewController.h */,
-				A973B4321B70E3890071DF1C /* FrontViewController.m */,
-				A973B4331B70E3890071DF1C /* HOMEVC.h */,
-				A973B4341B70E3890071DF1C /* HOMEVC.m */,
-				A973B4351B70E3890071DF1C /* house158.png */,
-				A973B4361B70E3890071DF1C /* LOGOUTVC.h */,
-				A973B4371B70E3890071DF1C /* LOGOUTVC.m */,
-				A973B4381B70E3890071DF1C /* MenuVC.h */,
-				A973B4391B70E3890071DF1C /* MenuVC.m */,
-				A973B43A1B70E3890071DF1C /* power39.png */,
-				A973B43B1B70E3890071DF1C /* RearViewController.h */,
-				A973B43C1B70E3890071DF1C /* RearViewController.m */,
-				A973B43D1B70E3890071DF1C /* settings56.png */,
-				A973B43E1B70E3890071DF1C /* SETTINGSVC.h */,
-				A973B43F1B70E3890071DF1C /* SETTINGSVC.m */,
-				A973B4401B70E3890071DF1C /* sliderVC.h */,
-				A973B4411B70E3890071DF1C /* sliderVC.m */,
-				A973B4421B70E3890071DF1C /* SliderViewController.h */,
-				A973B4431B70E3890071DF1C /* SWRevealViewController.h */,
-				A973B4441B70E3890071DF1C /* SWRevealViewController.m */,
+				A966AEE21B72336B00056EBC /* DrawerVC */,
 				A913792D1B68EFE5005E008F /* LoginVC */,
 				A91379301B68EFE5005E008F /* Signup */,
 				A92AA1931B5A315E00E378BE /* ViewController */,
@@ -320,6 +297,8 @@
 		A93249391B6F8DB900A91593 /* RKDropdownAlert */ = {
 			isa = PBXGroup;
 			children = (
+				A973B4661B70E7F10071DF1C /* RKDropdownAlert.h */,
+				A973B4671B70E7F10071DF1C /* RKDropdownAlert.m */,
 			);
 			name = RKDropdownAlert;
 			path = ThirdParty/RKDropdownAlert;
@@ -417,6 +396,30 @@
 				A959C4C11B57F44C00FA1481 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A966AEE21B72336B00056EBC /* DrawerVC */ = {
+			isa = PBXGroup;
+			children = (
+				A973B4311B70E3890071DF1C /* FrontViewController.h */,
+				A973B4321B70E3890071DF1C /* FrontViewController.m */,
+				A973B4331B70E3890071DF1C /* HOMEVC.h */,
+				A973B4341B70E3890071DF1C /* HOMEVC.m */,
+				A973B4351B70E3890071DF1C /* house158.png */,
+				A973B4361B70E3890071DF1C /* LOGOUTVC.h */,
+				A973B4371B70E3890071DF1C /* LOGOUTVC.m */,
+				A973B4381B70E3890071DF1C /* MenuVC.h */,
+				A973B4391B70E3890071DF1C /* MenuVC.m */,
+				A973B43A1B70E3890071DF1C /* power39.png */,
+				A973B43B1B70E3890071DF1C /* RearViewController.h */,
+				A973B43C1B70E3890071DF1C /* RearViewController.m */,
+				A973B43D1B70E3890071DF1C /* settings56.png */,
+				A973B43E1B70E3890071DF1C /* SETTINGSVC.h */,
+				A973B43F1B70E3890071DF1C /* SETTINGSVC.m */,
+				A973B4431B70E3890071DF1C /* SWRevealViewController.h */,
+				A973B4441B70E3890071DF1C /* SWRevealViewController.m */,
+			);
+			name = DrawerVC;
 			sourceTree = "<group>";
 		};
 		B0D825631B6DEA0300D0D50E /* ShareVC */ = {
@@ -550,13 +553,12 @@
 				A959C4A91B57F44C00FA1481 /* main.m in Sources */,
 				B0D825661B6DEA2A00D0D50E /* ShareVC.m in Sources */,
 				A973B4491B70E3890071DF1C /* LOGOUTVC.m in Sources */,
-				A973B4451B70E3890071DF1C /* FrontViewControlerr.m in Sources */,
 				A91379331B68EFE5005E008F /* LoginVC.m in Sources */,
 				A92AA19C1B5A315E00E378BE /* AppDelegate.m in Sources */,
 				A973B44E1B70E3890071DF1C /* SETTINGSVC.m in Sources */,
 				A973B4471B70E3890071DF1C /* HOMEVC.m in Sources */,
 				A91379341B68EFE5005E008F /* Signup.m in Sources */,
-				A973B44F1B70E3890071DF1C /* sliderVC.m in Sources */,
+				A973B4681B70E7F10071DF1C /* RKDropdownAlert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -714,7 +716,7 @@
 				);
 				GCC_VERSION = "";
 				INFOPLIST_FILE = HiSocialApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -732,7 +734,7 @@
 				);
 				GCC_VERSION = "";
 				INFOPLIST_FILE = HiSocialApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";

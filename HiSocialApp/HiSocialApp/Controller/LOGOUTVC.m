@@ -8,6 +8,7 @@
 
 #import "LOGOUTVC.h"
 #import "SWRevealViewController.h"
+#import <Parse/Parse.h>
 @interface LOGOUTVC ()
 
 @end
@@ -26,6 +27,9 @@
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
         
     }
+    
+    [self revealToggle];
+   
     // Do any additional setup after loading the view.
 }
 
@@ -33,7 +37,16 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)revealToggle
+{
+   
+    if ([PFUser currentUser]) {
+        UIAlertView *logoutAleart=[[UIAlertView alloc]initWithTitle:@"LOGOUT" message:@"Are you Sure Want to Logout? " delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [logoutAleart show];
+        [PFUser logOut];
+    }
+    [self.navigationController popViewControllerAnimated:YES];
+}
 /*
 #pragma mark - Navigation
 
