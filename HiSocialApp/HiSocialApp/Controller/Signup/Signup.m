@@ -67,7 +67,7 @@
         return;
 
     }else if ([self.txtMobNo.text isEqual:@""]){
-        [RKDropdownAlert title:@myAppName message:@"Please enter mobail number"];
+        [RKDropdownAlert title:@myAppName message:@"Please enter mobile number"];
         return;
 
     }else if ([self validatePhone:self.txtMobNo.text]){
