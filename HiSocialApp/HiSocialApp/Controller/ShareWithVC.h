@@ -7,16 +7,35 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ShareWithVC : UIViewController
-
-@property (weak, nonatomic) IBOutlet UIView *ShareView;
-@property (weak, nonatomic) IBOutlet UIButton *btnUncheck;
-@property (weak, nonatomic) IBOutlet UIButton *btnCheck;
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKShareKit/FBSDKShareKit.h>
 
 
+@interface ShareWithVC : UIViewController{
+    
+    
+    BOOL Checked;
+    BOOL facebook;
+    BOOL twitter;
+    BOOL all;
+}
 
-- (IBAction)btnUncheck:(id)sender;
-- (IBAction)btnCheck:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *CheckBox;
+- (IBAction)btnBlankBox:(id)sender;
+
+
+
+
+
+- (IBAction)btnSecBlank:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIButton *btnSecBlank;
+
+
+
+- (IBAction)btnThirdCheckBox:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *btnThirdCheckBox;
+
 
 @end
