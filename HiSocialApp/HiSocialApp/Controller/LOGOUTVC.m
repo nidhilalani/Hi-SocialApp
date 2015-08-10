@@ -9,6 +9,7 @@
 #import "LOGOUTVC.h"
 #import "SWRevealViewController.h"
 #import <Parse/Parse.h>
+#import "ViewController.h"
 @interface LOGOUTVC ()
 
 @end
@@ -29,7 +30,7 @@
     }
     
     [self revealToggle];
-   
+    
     // Do any additional setup after loading the view.
 }
 
@@ -39,22 +40,33 @@
 }
 -(void)revealToggle
 {
-   
+    
     if ([PFUser currentUser]) {
-        UIAlertView *logoutAleart=[[UIAlertView alloc]initWithTitle:@"LOGOUT" message:@"Are you Sure Want to Logout? " delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
-        [logoutAleart show];
+//        UIAlertView *logoutAleart=[[UIAlertView alloc]initWithTitle:@"LOGOUT" message:@"Are you Sure Want to Logout? " delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+//        [logoutAleart show];
         [PFUser logOut];
+        
+        [self funcPush];
     }
-    [self.navigationController popViewControllerAnimated:YES];
+}
+-(void)funcPush{
+    
+    UIStoryboard *aSb1=[UIStoryboard storyboardWithName:@"Storyboard1" bundle:nil];
+    ViewController *aView=[aSb1 instantiateViewControllerWithIdentifier:@"ViewController1"];
+    
+   ////
+    
+   /// Code baki
+    
 }
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
 */
 
 @end

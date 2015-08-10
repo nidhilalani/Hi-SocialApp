@@ -103,6 +103,7 @@
     if ([PASSWD conformpassword:PASSWD :CPASSWD]) {
         
                 PFUser *objSignup=[PFUser user];
+        [PFUser requestPasswordResetForEmailInBackground:@[email]];
     
                 NSString *username=[@"%@",subStrings objectAtIndex:0];
                 objSignup.username=username;
@@ -140,6 +141,10 @@
                  }];
  
     }
+    
+    
+    
+    
 }
     
     
