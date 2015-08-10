@@ -35,6 +35,7 @@
      {
          if (user) {
              NSLog(@"Welcome,%@",_txtUserName.text);
+             [self funcPushToHome];
          }
          else
          {
@@ -46,6 +47,11 @@
     
     
 }
+-(void)funcPushToHome{
+    UIStoryboard *aSb3 = [UIStoryboard storyboardWithName:@"Storyboard_3" bundle:nil];
+    SWRevealViewController *aHome = [aSb3 instantiateViewControllerWithIdentifier:@"SWRevealViewController"];
+    [self.navigationController pushViewController:aHome animated:NO];
 
+}
 
 @end
