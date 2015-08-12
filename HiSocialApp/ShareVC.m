@@ -7,8 +7,15 @@
 //
 
 #import "ShareVC.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @interface ShareVC ()
+@property (weak, nonatomic) IBOutlet UIView *popView;
+@property (weak, nonatomic) IBOutlet UIView *bgFadedView;
+@property (weak, nonatomic) IBOutlet UIButton *btnFB;
+@property (weak, nonatomic) IBOutlet UIButton *btnTwitter;
+@property (weak, nonatomic) IBOutlet UIButton *btnAll;
 
 @end
 
@@ -17,6 +24,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+   
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -105,5 +115,58 @@
 
 
 
+- (IBAction)btnShareAction:(id)sender {
+    
+_bgFadedView.hidden =  _popView.hidden = NO;
+    _popView.transform = CGAffineTransformTranslate(_popView.transform, 0, _popView.frame.size.height);
+    _bgFadedView.alpha= 0.0;
 
+    [UIView animateWithDuration:0.4 animations:^{
+        _popView.transform =  CGAffineTransformIdentity;
+        _bgFadedView.alpha = 1.0;
+    } completion:^(BOOL finished) {
+        
+    }];
+    
+}
+- (IBAction)btnCheckmarkAction:(UIButton *)sender {
+    
+    sender.selected =  !sender.selected;
+    switch (sender.tag) {
+        case 100:
+            //facebook
+            if (_btnFB.selected) {
+                
+                
+                
+            }
+            break;
+        case 101:
+            if (_btnTwitter.selected) {
+                
+            }
+            break;
+        case 102:
+            if (_btnAll.selected) {
+                
+            }
+            
+            if(sender.selected){
+                _btnFB.selected =  YES;
+                _btnTwitter.selected =  YES;
+                
+            }
+            else{
+                _btnFB.selected=NO;
+                _btnTwitter.selected=NO;
+            
+            }
+            
+            break;
+        default:
+            break;
+    }
+    
+    
+}
 @end

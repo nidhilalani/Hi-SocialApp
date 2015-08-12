@@ -12,30 +12,6 @@
 #import <FBSDKShareKit/FBSDKShareKit.h>
 
 
-@interface ShareWithVC : UIViewController{
-    
-    
-    BOOL Checked;
-    BOOL facebook;
-    BOOL twitter;
-    BOOL all;
-}
-
-@property (weak, nonatomic) IBOutlet UIButton *CheckBox;
-- (IBAction)btnBlankBox:(id)sender;
-
-
-
-
-
-- (IBAction)btnSecBlank:(id)sender;
-
-@property (weak, nonatomic) IBOutlet UIButton *btnSecBlank;
-
-
-
-- (IBAction)btnThirdCheckBox:(id)sender;
-@property (weak, nonatomic) IBOutlet UIButton *btnThirdCheckBox;
-
+@interface ShareWithVC : UIViewController
 
 @end
